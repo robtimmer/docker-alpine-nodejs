@@ -13,7 +13,7 @@ ENV GPG_KEYS \
   B9AE9905FFD7803F25714661B63B535A4C206CA9 \
   C4F0DFFF4E8C1A8236409D08E73BC641CC11F4C8
 
-# Install nodejs
+# Build and install nodejs
 RUN \
     build_pkgs="git curl make gcc g++ python linux-headers libgcc libstdc++ binutils-gold xz gnupg" \
     && apk --no-cache add ${build_pkgs}  \
